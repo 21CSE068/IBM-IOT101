@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.traffic-info {
+    max-width: 800px;
+    margin:auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 40px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.traffic-light-status, .pedestrian-crossing{
+    margin-bottom: 35px;
+    padding: 0 20px 20px 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px; 
+}
+
+.ambulance-alert{
+    padding: 0 20px 20px 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+} 
+
+#red-light-status, #yellow-light-status, #green-light-status, #pedestrian-status, #ambulance-status {
+    margin: 0;
+}
+
+#red-light-status.on, #yellow-light-status.on, #green-light-status.on, #pedestrian-status.on, #ambulance-status.on {
+    color: green;
+}
+
+#red-light-status.off, #yellow-light-status.off, #green-light-status.off, #pedestrian-status.off, #ambulance-status.off {
+    color: red;
+}
